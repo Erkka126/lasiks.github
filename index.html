@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lasiks – Lasinpesupalvelut</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lasiks</h1>
+    <p>Puhdasta jälkeä. Kirkas näkymä.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Miksi valita meidät?</h2>
+      <ul>
+        <li>Ammattimainen palvelu</li>
+        <li>Ekologiset pesuaineet</li>
+        <li>Nopea ja luotettava</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Meistä</h2>
+      <p>Lasiks on uusi projekti, joka perustuu innostukseen ja oppimiseen. Sivun on tehnyt 11-vuotias perustaja, joka haluaa oppia lisää yrittäjyydestä ja ehkä perustaa oikean yrityksen tulevaisuudessa. Sivusto toimii jo nyt ja tarjoaa tietoa ja hinnanlaskurin ikkunanpesupalvelusta.</p>
+    </section>
+<section>
+  <h2>Laske hinta</h2>
+
+  <p>Valitse kuinka monta ikkunaa kutakin kokoa:</p>
+
+  <label for="pieni">Pieni (alle 1 m²) – 3,50 €</label><br>
+  <input type="number" id="pieni" min="0" value="0"><br><br>
+
+  <label for="keski">Keskikokoinen (1–2 m²) – 7 €</label><br>
+  <input type="number" id="keski" min="0" value="0"><br><br>
+
+  <label for="iso">Iso (yli 2 m²) – 10 €</label><br>
+  <input type="number" id="iso" min="0" value="0"><br><br>
+
+  <button onclick="laskeHinta()">Laske hinta</button>
+
+  <p id="tulos" style="margin-top: 15px;">Yhteensä: 0 €</p>
+</section>
+
+
+    <section>
+      <h2>Ota yhteyttä</h2>
+      <button onclick="näytäLomake()">Ota yhteyttä</button>
+      <section class="info-laatikko">
+  <h2>Yhteydenoton ajat</h2>
+  <p>Vastaamme viesteihin arkisin klo 9–17.</p>
+  <p>Voit lähettää viestin milloin tahansa, mutta vastaamme virka-aikana!</p>
+</section>
+
+      <form id="yhteyslomake" style="display: none; margin-top: 15px;" onsubmit="lahetaLomake(event)">
+        <label for="email">Sähköposti tai puhelinnumero:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+        <button type="submit">Lähetä</button>
+      </form>
+
+      <p id="viesti" style="display: none; margin-top: 15px;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lasiks Oy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

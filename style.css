@@ -1,0 +1,107 @@
+/* Yleisrunko ja taustakuva */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("tausta.jpg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+
+/* Ylätunniste */
+header {
+  background-color: rgba(0, 122, 204, 0.8); /* Vaaleansininen tausta */
+  color: white;
+  padding: 30px;
+}
+
+/* Sivun pääosa */
+main {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.4); /* Läpinäkyvä tumma tausta sisällölle */
+}
+
+/* Lista (esim. miksi valita meidät) */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Napit */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007acc; /* Sininen */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3; /* Tummempi sininen hoverissa */
+}
+
+/* Alatunniste */
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Yhteystietolaatikko */
+.info-laatikko {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Syötekentät */
+input[type="number"],
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+/* 📱 Mobiililaitteille */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, main, footer {
+    padding: 20px;
+  }
+
+  input, button {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .info-laatikko {
+    padding: 15px;
+  }
+}
